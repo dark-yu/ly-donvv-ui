@@ -16,6 +16,10 @@ module.exports = {
     {
       name: 'DTable',
       author: 'wly'
+    },
+    {
+      name: 'DTable',
+      author: 'wly'
     }
   ]
 }
