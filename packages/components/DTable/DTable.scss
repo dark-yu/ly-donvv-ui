@@ -1,0 +1,30 @@
+.table-wrap{
+  .el-form-item__content{
+    text-align: left;
+  }
+  .top-filter-wrap{
+    .sub-reset-btn-warp{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .filter-wrap{
+    display: block!important;
+    .card-header-wrap{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .el-date-editor .el-range-separator {
+    min-width: 30px!important;
+  }
+
+  .footer{
+    padding-top: 16px;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
