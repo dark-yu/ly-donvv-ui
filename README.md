@@ -11,5 +11,7 @@
 
 ## 打包命令
 `npm  run dev`  启动开发服务器
+
 `npm  run lib:all`  打包所有，全局引入
+
 `npm  run lib:disp`  分开打包，按需引入
