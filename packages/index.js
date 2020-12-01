@@ -3,6 +3,7 @@
 //  -----------------------组件
 // 导入组件（用于注册所有组件）
 import DButton from './components/DButton';
+import DDialog from './components/DDialog';
 import DTable from './components/DTable';
 // -------------------------指令
 // import Directives from './directive/index';
@@ -11,14 +12,15 @@ import './style/index.scss';
 
 
 
-console.log('Directives', Directives);
+// console.log('Directives', Directives);
 
 
 
 // 定义组件列表
 const componentsList = [
   DTable,
-  DButton
+  DButton,
+  DDialog
 ];
 
 const install = function(Vue) {
@@ -49,7 +51,8 @@ if(typeof window !== 'undefined' && window.Vue) {
 export default {
   install,
   DTable,
-  DButton
+  DButton,
+  DDialog
 }
 
 // 按需加载各个组件

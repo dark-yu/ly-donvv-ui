@@ -34,6 +34,7 @@
         />
       </template>
     </DTable>
+    <DDialog refs="dialog" :title="title" :list="list" />
   </div>
 </template>
 
@@ -220,11 +221,104 @@ export default {
       pagation: {
         pageIndex: 1,
         pageSize: 100
-      }
+      },
+      title: '测试',
+      url: '',
+      list: [
+        {
+          label: '餐厅',
+          type: 'input',
+          model: 'name',
+          value: '55555'
+        },
+        {
+          label: '菜单',
+          type: 'select',
+          model: 'food',
+          value: '选项1',
+          options: [{
+            value: '选项1',
+            label: '黄金糕'
+          }, {
+            value: '选项2',
+            label: '双皮奶'
+          }, {
+            value: '选项3',
+            label: '蚵仔煎'
+          }, {
+            value: '选项4',
+            label: '龙须面'
+          }, {
+            value: '选项5',
+            label: '北京烤鸭'
+          }]
+        },
+        {
+          label: '发票类型',
+          type: 'radio-button',
+          model: 'invoice',
+          value: '4',
+          options: [
+            {
+              label: '2',
+              value: '普通发票'
+            },
+            {
+              label: '3',
+              value: '电子发票'
+            },
+            {
+              label: '4',
+              value: '增值税专用发票'
+            }
+          ]
+        },
+        {
+          label: '会员',
+          type: 'switch',
+          model: 'isVip',
+          value: true,
+          tip: '会员可以享受更多的福利'
+        },
+        {
+          label: '选择时间',
+          type: 'data',
+          model: 'data',
+          value: [new Date('2020-10-01'), new Date('2020-11-30')]
+        },
+        {
+          label: '选择地址',
+          type: 'address',
+          model: 'address',
+          value: ['北京市', '市辖区', '石景山区'],
+          options: dist
+        },
+        {
+          label: '书籍',
+          type: 'check',
+          model: 'book',
+          value: ['将进酒'],
+          options: ['杀破狼', '将进酒', '天官赐福', '破晓']
+        },
+        {
+          label: '选择数量',
+          type: 'number',
+          model: 'num',
+          value: 5
+        },
+        {
+          label: '评价',
+          type: 'textarea',
+          model: 'comment',
+          maxlength: '200',
+          value: 'just so so'
+        }
+      ],
     }
   },
   created() {
     console.log(this.$DUntill)
+    this.$refs['dialog'].open()
   },
   methods: {
     operateFunction(data) {
