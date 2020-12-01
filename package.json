@@ -1,6 +1,6 @@
 {
   "name": "donvv-ui",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "A Personal Learning UI library For Vue",
   "main": "lib/donvvui.js",
   "private": false,
