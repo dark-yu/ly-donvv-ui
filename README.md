@@ -20,3 +20,24 @@
 `npm  run lib:all`  打包所有，全局引入
 
 `npm  run lib:disp`  分开打包，按需引入
+
+
+## 使用
+
+- 全局引用
+
+```
+  import Donvvui from 'donvv-ui';
+  import 'donvv-ui/lib/donvvui.css';
+
+  Vue.use(Donvvui);
+```
+
+- 按需引用
+
+```
+  import DTable from 'donvv-ui/lib/packages/components/dtable';
+  import 'donvv-ui/lib/packages/components/dtable/style.css';
+
+  Vue.use(DTable);
+```

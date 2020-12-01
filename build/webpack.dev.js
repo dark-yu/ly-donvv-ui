@@ -6,6 +6,8 @@ const webpackCommonConfig = require('./webpack.config.js');
 // 引入配置合并插件
 const merge = require('webpack-merge');
 
+console.log(process.env.NODE_ENV);
+
 module.exports = merge(webpackCommonConfig, {
   // 指定模式，这儿有none production development三个参数可选
   // 具体作用请查阅官方文档

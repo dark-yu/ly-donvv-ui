@@ -1,12 +1,17 @@
 /* 组件库对外导出的组件集合，对整个组件进行导出 */
 
-
+//  -----------------------组件
 // 导入组件（用于注册所有组件）
 import DButton from './components/DButton';
 import DTable from './components/DTable';
+// -------------------------指令
+// import Directives from './directive/index';
 // 导入主样式文件（用于注册所有组件时使用）
 import './style/index.scss';
 
+
+
+console.log('Directives', Directives);
 
 
 

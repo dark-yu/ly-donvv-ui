@@ -22,7 +22,7 @@ module.exports = merge(webpackLibBaseConfig, {
   entry,
   output: {
     // 打包过后的文件的输出的路径
-    path: path.resolve(__dirname, "../lib/packages"),
+    path: path.resolve(__dirname, "../lib/packages/components"),
     // 打包后生成的js文件
     // 解释下这个[name]是怎么来的，它是根据你的entry命名来的，入口叫啥，出口的[name]就叫啥
     filename: "[name]/index.js",

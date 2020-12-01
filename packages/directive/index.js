@@ -1,7 +1,8 @@
-let XXX = {}
-XXX.install = function(Vue) {
-  console.log(454544);
-};
+// import Clipboard from './clipboard/index'
+// import Sticky from './sticky'
 
-// 默认导出方式导出
-export default XXX;
+// // 默认导出方式导出
+// export default {
+//   Clipboard,
+//   Sticky
+// }

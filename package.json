@@ -56,6 +56,7 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "clipboard": "^2.0.6",
     "core-js": "^2.6.10",
     "donvv-ui": "^1.0.0",
     "element-ui": "^2.14.1",
